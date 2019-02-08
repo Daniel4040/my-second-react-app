@@ -1,11 +1,20 @@
 import React, { Component } from "react";
 import { Navbar, NavDropdown, Nav } from "react-bootstrap";
+import "./Navbar.css";
 
 class NavbarComponent extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">NBA Legends</Navbar.Brand>
+      <Navbar
+        className="fixed-top"
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+      >
+        <Navbar.Brand id="navbrand" href="#home">
+          NBA Legends
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
